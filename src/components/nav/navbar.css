@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: fit-content;
+}
+
+:root {
+  --custom-padding: calc(1rem + 2px) 2vw;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.navbar__topNav {
+  background-color: #304f47;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 18px 4vw;
+}
+
+.navbar__topNav--col1 {
+  display: flex;
+  justify-content: space-between;
+  width: fit-content;
+  min-width: 350px;
+}
+
+.navbar__topNav--col1 p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 0 5px;
+  gap: 10px;
+}
+
+.navbar__topNav--col2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
+}
+
+.navbar__topNav--col2 img {
+  margin: 0 0.5rem;
+}
+
+.navbar__bottomNav {
+  background-color: #fff;
+  position: relative;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  padding: var(--custom-padding);
+}
+
+.bottomNav__sub1 {
+  width: fit-content;
+  min-width: 350px;
+  height: fit-content;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.bottomNav__sub1 .logo {
+  background: url("../../images/logo.png");
+  background-size: cover;
+  background-position: center;
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+  display: flex;
+}
+
+.bottomNav__sub1 ul {
+  position: relative;
+  list-style: none;
+  display: flex;
+  align-self: center;
+  width: fit-content;
+  margin-left: 1.5rem;
+}
+
+.bottomNav__sub1 ul li {
+  color: #000;
+  margin:  0 10px;
+  font-size: 17px;
+}
+
+.bottomNav__sub1 .menu-icon,
+.bottomNav__sub1 .close-menu-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 600px){
+  /* .bottomNav__sub1 ul {
+    background-color: brown;
+    position: absolute;
+    top: 0;
+    right: 0;
+    right: -100%;
+    flex-direction: column;
+    margin: 0;
+    transition: 0.5s;
+  } */
+
+  /* .bottomNav__sub1 .close-menu-icon {
+    display: unset;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+  } */
+
+  /* .bottomNav__sub1 .menu-icon {
+    display: unset;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 0;
+    right: 0;
+    margin: 10px;
+  }
+
+  .bottomNav__sub1 .menu-icon.not-active {
+    display: none;
+  } */
+}
