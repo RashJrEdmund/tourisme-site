@@ -1,0 +1,22 @@
+[
+  {
+    "photo": "../../images/girrafe.png",
+    "header": "Kigali",
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat elit sed pretium, egestas sed sit."
+  },
+  {
+    "photo": "../../images/girrafe.png",
+    "header": "Huye",
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat elit sed pretium, egestas sed sit."
+  },
+  {
+    "photo": "../../images/girrafe.png",
+    "header": "Rubavu",
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat elit sed pretium, egestas sed sit."
+  },
+  {
+    "photo": "../../images/girrafe.png",
+    "header": "Musanze",
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat elit sed pretium, egestas sed sit."
+  }
+]

@@ -2,6 +2,15 @@
   box-sizing: border-box;
 }
 
+.homebody {
+  background-color: #fff;
+  width: 100vw;
+  max-width: 1224px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
 .body__translated {
   background-color: #304f47;
   transform: translateY(-50%);
