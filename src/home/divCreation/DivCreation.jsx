@@ -4,6 +4,7 @@ import vehicleIcon from '../../images/vehicle icon.png';
 import checkIcon from '../../images/check icon.png';
 import calenderIcon from '../../images/calender icon.png';
 import likeIcon from '../../images/like icon.png';
+import avatar from '../../images/avatar.png';
 
 const createImageDivs = () => {
   return data.map((piece) => {
@@ -24,8 +25,8 @@ const createIconCards = () => {
         <img src={vehicleIcon} alt="image_of_a_vehicle_icon" />
         <p>100+ tours around Rwanda</p>
       </div>
-      <div className={checkIcon}>
-        <img src="" alt="image_of_a_check_circle" />
+      <div className="iconDivs__iconDiv">
+        <img src={checkIcon} alt="image_of_a_check_circle" />
         <p>100% Trusted Travel agency</p>
       </div>
       <div className="iconDivs__iconDiv">
@@ -40,7 +41,56 @@ const createIconCards = () => {
   );
 };
 
+const createAvatarCards = () => {
+  return (
+    <div className="avatarCardDivs">
+      <div className="avatarCard">
+        <img src={avatar} alt="avatar_image" />
+        <header>Emma Waston</header>
+        <p>
+          I recently went on a tour with XYZ Tourism Company and was extremely
+          impressed with the level of professionalism and organization.
+        </p>
+      </div>
+      <div className="avatarCard">
+        <img src={avatar} alt="avatar_image" />
+        <header>Emma Waston</header>
+        <p>
+          I recently went on a tour with XYZ Tourism Company and was extremely
+          impressed with the level of professionalism and organization.
+        </p>
+      </div>
+      <div className="avatarCard">
+        <img src={avatar} alt="avatar_image" />
+        <header>Emma Waston</header>
+        <p>
+          I recently went on a tour with XYZ Tourism Company and was extremely
+          impressed with the level of professionalism and organization.
+        </p>
+      </div>
+    </div>
+  );
+};
+
+const buttonsAboveFooter = () => {
+  return (
+    <div className="buttonsAboveFooter">
+      <button className="buttonsAboveFooter__btn" type="button">
+        -
+      </button>
+      <button className="buttonsAboveFooter__btn" type="button">
+        -
+      </button>
+      <button className="buttonsAboveFooter__btn" type="button">
+        -
+      </button>
+    </div>
+  );
+};
+
 export default {
   createImageDivs,
   createIconCards,
+  createAvatarCards,
+  buttonsAboveFooter,
 };

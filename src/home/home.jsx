@@ -53,6 +53,14 @@ function Home() {
         <Heading text1="Why us?" text2="Why Travel with Africa wizzy Safari" />
 
         <div className="home__imageDivs">{cards.createIconCards()}</div>
+
+        <Heading
+          text1="Our Traveller Say"
+          text2="What our clients say about us"
+        />
+
+        <div>{cards.createAvatarCards()}</div>
+        <div>{cards.buttonsAboveFooter()}</div>
       </div>
 
       <Footer />
