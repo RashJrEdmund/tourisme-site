@@ -3,6 +3,7 @@ import Fb from '../../images/FB.png';
 import Tw from '../../images/tweetter.png';
 import In from '../../images/linkedin.png';
 import Ig from '../../images/instagram.png';
+import Paperplane from '../../images/paperplane.png';
 
 function Footer() {
   return (
@@ -17,6 +18,12 @@ function Footer() {
           <p>Phone: +250 788 123 456</p>
           <p>Email: info@rwandatourism.com</p>
           <p>Address: Kigali, Rwanda</p>
+          <form className="footDiv__form">
+            <input type="email" placeholder="input yout email here" />
+            <button type="submit" className="footDiv__form--btn">
+              <img src={Paperplane} alt="paper_plane_icon" />
+            </button>
+          </form>
         </div>
 
         <div className="footerDiv__child--col2">

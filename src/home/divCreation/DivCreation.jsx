@@ -75,15 +75,9 @@ const createAvatarCards = () => {
 const buttonsAboveFooter = () => {
   return (
     <div className="buttonsAboveFooter">
-      <button className="buttonsAboveFooter__btn" type="button">
-        -
-      </button>
-      <button className="buttonsAboveFooter__btn" type="button">
-        -
-      </button>
-      <button className="buttonsAboveFooter__btn" type="button">
-        -
-      </button>
+      <div className="buttonsAboveFooter__btn" />
+      <div className="buttonsAboveFooter__btn" />
+      <div className="buttonsAboveFooter__btn" />
     </div>
   );
 };

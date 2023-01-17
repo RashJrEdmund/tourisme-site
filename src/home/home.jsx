@@ -1,5 +1,4 @@
 import './home.css';
-import NavBar from '../components/nav/Navbar';
 import Hero from '../components/hero/Hero';
 import Button from '../components/button/Button';
 import Heading from '../components/heading/Heading';
@@ -7,12 +6,9 @@ import NaturePhotos from '../components/naturePhotos/NaturePhotos';
 import ChangePageBtns from '../components/changePageBtns/ChangePageBtns';
 import cards from './divCreation/DivCreation';
 
-import Footer from '../components/footer/Footer';
-
 function Home() {
   return (
     <>
-      <NavBar />
       <Hero
         text1="Experience the beauty of Rwanda with us"
         text2="Discover the Land of a Thousand Hills"
@@ -62,8 +58,6 @@ function Home() {
         <div>{cards.createAvatarCards()}</div>
         <div>{cards.buttonsAboveFooter()}</div>
       </div>
-
-      <Footer />
     </>
   );
 }
