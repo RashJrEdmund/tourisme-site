@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+.home__imageDivs .createdImages__newImage {
+  min-width: 336px;
+  margin: 0 10px;
+  padding: 16px 20px 76px;
+  transition: 0.5s;
+}
+
+.home__imageDivs .createdImages__newImage:hover {
+  border: 1px solid #999;
+  background-color: unset;
+}
+
+.home__imageDivs .createdImages__newImage > img {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  border-radius: 50px;
+  border-radius: 50px;
+}
+
+.home__imageDivs .createdImages__newImage header {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 39px;
+  line-height: 120%;
+  letter-spacing: 0.005em;
+  color: #000;
+  margin: 41px 0 16px;
+}
+
+.home__imageDivs .createdImages__newImage p {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: 0.005em;
+  color: #9A9AB0;
+  margin: 0;
+}

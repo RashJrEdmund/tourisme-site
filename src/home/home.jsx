@@ -5,23 +5,9 @@ import Button from '../components/button/Button';
 import Heading from '../components/heading/Heading';
 import NaturePhotos from '../components/naturePhotos/NaturePhotos';
 import ChangePageBtns from '../components/changePageBtns/ChangePageBtns';
-// import girrafe from '../images/girrafe.png';
-
-import data from '../components/data/Data.json';
+import cards from './divCreation/DivCreation';
 
 import Footer from '../components/footer/Footer';
-
-function createImageDivs() {
-  data.map((piece) => {
-    return (
-      <div className="createdImages__newImage">
-        <img src={piece.photo} alt="data_piece_image" />
-        <header>{piece.header}</header>
-        <p>{piece.paragraph} </p>
-      </div>
-    );
-  }); // real crazy shit going on here!
-}
 
 function Home() {
   return (
@@ -62,17 +48,11 @@ function Home() {
         />
         <ChangePageBtns width="150px" position="flex-end" />
 
-        {/* <div className="createdImageDivs">
-          <div className="createdImages__newImage">
-            <img src={girrafe} alt="data_piece_image" />
-            <header>bla bla bla</header>
-            <p> </p>
-          </div>
-        </div> */}
-
-        <div className="imageDivs">{createImageDivs()}</div>
+        <div className="home__imageDivs">{cards.createImageDivs()}</div>
 
         <Heading text1="Why us?" text2="Why Travel with Africa wizzy Safari" />
+
+        <div className="home__imageDivs">{cards.createIconCards()}</div>
       </div>
 
       <Footer />

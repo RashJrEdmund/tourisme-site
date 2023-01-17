@@ -65,3 +65,11 @@
   color: #FFFFFF;
   margin: 5px 0 0;
 }
+
+.home__imageDivs {
+  display: flex;
+  overflow: auto;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: fit-content;
+}
