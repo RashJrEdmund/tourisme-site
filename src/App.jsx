@@ -9,7 +9,9 @@ import About from './about/about';
 function App() {
   return (
     <BrowserRouter>
-      <NavBar />
+      <div className="navBar__holder">
+        <NavBar />
+      </div>
       <Routes>
         <Route index path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

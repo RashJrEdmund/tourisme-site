@@ -1,4 +1,5 @@
 import './navbar.css';
+import { Link } from 'react-router-dom';
 import Button from '../button/Button';
 import phone from '../../images/phone.png';
 import mail from '../../images/mail.png';
@@ -39,12 +40,22 @@ function NavBar() {
           <div className="logo" />
           <ul>
             <img className="close-menu-icon" src={closeMenu} alt="close_menu" />
-            <li>Home</li>
-            <li>About</li>
-            <li>Tour Package</li>
-            <li>Gallery</li>
+            <Link to="/">
+              <li>Home</li>
+            </Link>
+            <Link to="/about">
+              <li>About</li>
+            </Link>
+            <Link to="/tour">
+              <li>Tour Package</li>
+            </Link>
+            <Link to="/gallery">
+              <li>Gallery</li>
+            </Link>
             <li>Blog</li>
-            <li>Contact Us</li>
+            <Link to="/contact">
+              <li>Contact Us</li>
+            </Link>
           </ul>
           <img className="menu-icon" src={menuIcon} alt="hamburger menu" />
         </div>

@@ -15,7 +15,9 @@ function NaturePhotos() {
           watching, and nature walks.
         </p>
         <div className="naturePhotos__imageDiv--btn">
-          <Button text="Learn More" color="#c7923e" />
+          <div className="naturePhotos__imageDiv--subBtn">
+            <Button text="Learn More" color="#c7923e" />
+          </div>
         </div>
       </div>
       <div className="naturePhotos__imageDiv">
@@ -27,7 +29,9 @@ function NaturePhotos() {
           the park.
         </p>
         <div className="naturePhotos__imageDiv--btn">
-          <Button text="Learn More" color="#c7923e" />
+          <div className="naturePhotos__imageDiv--subBtn">
+            <Button text="Learn More" color="#c7923e" />
+          </div>
         </div>
       </div>
       <div className="naturePhotos__imageDiv">
@@ -37,7 +41,9 @@ function NaturePhotos() {
           A trip to Lake Kivu can be a truly unique and memorable experience.
         </p>
         <div className="naturePhotos__imageDiv--btn">
-          <Button text="Learn More" color="#c7923e" />
+          <div className="naturePhotos__imageDiv--subBtn">
+            <Button text="Learn More" color="#c7923e" />
+          </div>
         </div>
       </div>
     </div>

@@ -11,3 +11,10 @@ body {
 .hero button:hover {
   box-shadow: 0 0 10px;
 }
+
+.navBar__holder {
+  background-color: yellowgreen;
+  height: fit-content;
+  min-height: 167px;
+  padding: 30px;
+}
