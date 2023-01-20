@@ -25,6 +25,11 @@
   height: 584px;
   display: flex;
   flex-direction: column;
+  transition: 0.5s;
+}
+
+.naturePhotos__imageDiv:hover {
+  box-shadow: 0 0 10px #222;
 }
 
 .naturePhotos__imageDiv img {
@@ -67,12 +72,6 @@
   border-radius: 8px;
   width: fit-content;
   height: fit-content;
-  transition: 0.5s;
-}
-
-.naturePhotos__imageDiv--subBtn:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 5px #333;
 }
 
 @media only screen and (max-width: 600px){

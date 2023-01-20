@@ -35,3 +35,15 @@
   margin: 23px auto;
   max-width: 608px;
 }
+
+.heading_component__p3 {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #000;
+  margin: 43px auto 0;
+}

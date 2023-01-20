@@ -4,7 +4,11 @@ import './button.css';
 function Button({ text, color }) {
   return (
     <div>
-      <button style={{ backgroundColor: color }} type="submit">
+      <button
+        className="button__btn"
+        style={{ backgroundColor: color }}
+        type="submit"
+      >
         {text}
       </button>
     </div>

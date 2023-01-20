@@ -13,7 +13,6 @@
 }
 
 .about__hero .about__hero--col1 {
-  background-color: pink;
   height: 100%;
   width: 100%;
   display: flex;
@@ -22,7 +21,6 @@
 }
 
 .about__hero .about__hero--col1--sub {
-  background-color: purple;
   height: fit-content;
   width: fit-content;
   max-width: 608px;
@@ -34,7 +32,6 @@
 }
 
 .about__hero .about__hero--col1 h1 {
-  background-color: green;
   color: #000;
   font-family: Lora;
   font-style: bold;
@@ -58,7 +55,6 @@
 
 .aboutBody__translated {
   background-color: #fff;
-  background-color: #304f47;
   height: fit-content;
   width: 90vw;
   max-width: 816px;
@@ -111,6 +107,17 @@
   margin-left: 40px;
 }
 
+.aboutBody__translated--btn {
+  width: fit-content;
+  height: fit-content;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.about__body .aboutBody__translated--btn:hover {
+  transform: translateY(-20px);
+}
+
 /* Ending the about__hero--col1, starting col2 */
 
 .about__hero .about__hero--col2 {
@@ -135,8 +142,10 @@
 }
 
 .about__body .about__hero--col1 {
+  padding: 10px;
   display: flex;
   flex-direction: column;
+  word-break: keep-all;
 }
 
 .about__body .about__body--col1 .underline {

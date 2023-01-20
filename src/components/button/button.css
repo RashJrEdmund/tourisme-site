@@ -5,3 +5,7 @@ button {
   border-radius: 5px;
   transition: 0.5s;
 }
+
+.button__btn:hover {
+  transform: translateY(-15px);
+}

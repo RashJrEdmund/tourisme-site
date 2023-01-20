@@ -30,7 +30,9 @@ function About() {
             </li>
           </ul>
         </div>
-        <Button text="Book Now" color="#c7923e" />
+        <div className="aboutBody__translated--btn">
+          <Button text="Book Now" color="#c7923e" />
+        </div>
       </div>
     );
   };
@@ -53,7 +55,7 @@ function About() {
 
       <div className="about__body">
         <div className="about__body--col1">
-          <Heading text2="Welcome to Africa Wizzy Safari" />
+          <Heading text3="Welcome to Africa Wizzy Safari" />
           <div className="underline" />
         </div>
         <CreatDivs />

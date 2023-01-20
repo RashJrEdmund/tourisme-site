@@ -6,6 +6,7 @@ import NavBar from './components/nav/Navbar';
 import Footer from './components/footer/Footer';
 import Home from './home/home';
 import About from './about/about';
+import Tour from './tour/tour';
 // import { themeObject, ThemeProvider } from './components/context/theme.context';
 
 import { ThemeProvider, themeObject } from './components/context/theme.context';
@@ -36,6 +37,7 @@ function App() {
           <Routes>
             <Route index path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/tour" element={<Tour />} />
           </Routes>
           <Footer />
         </BrowserRouter>
