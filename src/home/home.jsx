@@ -43,6 +43,9 @@ function Home() {
       <Hero
         text1="Experience the beauty of Rwanda with us"
         text2="Discover the Land of a Thousand Hills"
+        text3=""
+        text4=""
+        spanText="goat"
       />
       <div className="homebody">
         {homeBodyTranslate()}
@@ -50,7 +53,6 @@ function Home() {
           text1="Chose your Package"
           text2="Select your Best Package for your Travel"
         />
-        <NaturePhotos />
         <NaturePhotos />
         <Heading
           text1="Popular Destinations"

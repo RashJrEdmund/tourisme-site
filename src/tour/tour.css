@@ -1,3 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+
 * {
   box-sizing: border-box;
+}
+
+.tourBody {
+  height: fit-content;
+  width: 100vw;
+  max-width: 1224px;
+  margin: 34px auto;
+}
+
+.tourPhotos {
+  width: 100vw;
+  max-width: 1224px;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: space-evenly;
+  align-content: center;
+  margin: 34px auto;
+}
+
+.tourPhotos__imageDiv {
+  position: relative;
+  border: 1px solid #999;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 90vw;
+  height: 584px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+}
+
+.tourPhotos__imageDiv:hover {
+  box-shadow: 0 0 10px #222;
+}
+
+.tourPhotos__imageDiv img {
+  height: 100%;
+  width: 100%;
+  max-height: 310px;
+}
+
+.tourPhotos__imageDiv header {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.005em;
+  color: #11142d;
+  margin: 32px 14px 3px;
+}
+
+.tourPhotos__imageDiv p {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: 0.005em;
+  color: #000;
+  margin: 13px 14px;
+}
+
+.tourPhotos__imageDiv--btn {
+  width: fit-content;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 12px 14px 32px;
+}
+
+.tourPhotos__imageDiv--subBtn {
+  border: none;
+  border-radius: 8px;
+  width: fit-content;
+  height: fit-content;
+}
+
+@media only screen and (max-width: 600px){
+  .naturePhotos {
+    grid-template-columns: 1fr;
+  }
+
+  .tourPhotos__imageDiv {
+    margin: 34px auto;
+  }
 }

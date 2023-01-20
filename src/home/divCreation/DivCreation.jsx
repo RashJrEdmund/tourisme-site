@@ -10,7 +10,7 @@ const createImageDivs = () => {
   return data.map((piece) => {
     return (
       <div className="createdImages__newImage" key={piece.header}>
-        <img src={piece.photo} alt="each_card_image" />
+        <img src={piece.photo} alt={piece.alt} />
         <header>{piece.header}</header>
         <p>{piece.paragraph} </p>
       </div>

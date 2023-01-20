@@ -1,22 +1,37 @@
-import NaturePhotos from '../components/naturePhotos/NaturePhotos';
+import './tour.css';
+import data from './tourData.json';
 import Hero from '../components/hero/Hero';
+import Heading from '../components/heading/Heading';
+import Button from '../components/button/Button';
+import ChangePageBtns from '../components/changePageBtns/ChangePageBtns';
 
-function Tour(nTimes) {
-  const renderTourPhotos = (m) => {
-    const template = <NaturePhotos />;
-    // eslint-disable-next-line no-plusplus
-    for (let i = 0; i <= m; i++) {
-      // eslint-disable-next-line no-const-assign
-      template += <NaturePhotos />;
-    }
-
-    return template;
+function Tour() {
+  const renderTourPhotos = () => {
+    return data.map((piece) => {
+      return (
+        <div className="tourPhotos__imageDiv">
+          <img src={piece.src} alt="photo_of_girrafe" />
+          <header>{piece.header}</header>
+          <p>{piece.paragraph}</p>
+          <div className="tourPhotos__imageDiv--btn">
+            <Button text="Learn More" color="#c7923e" />
+          </div>
+        </div>
+      );
+    });
   };
 
   return (
     <>
-      <Hero />
-      {renderTourPhotos(nTimes)};
+      <Hero text3="Tour Package" text4="Home" spanText="Tour Package" />
+      <Heading
+        text1="Choose Your Package"
+        text2="Select Your Best Package for your Travel"
+      />
+      <div className="tourBody">
+        <div className="tourPhotos">{renderTourPhotos()}</div>
+        <ChangePageBtns width="100%" position="flex-end" />
+      </div>
     </>
   );
 }
