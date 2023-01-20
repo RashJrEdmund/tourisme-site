@@ -3,6 +3,7 @@ import Heading from '../components/heading/Heading';
 import Button from '../components/button/Button';
 import chimps from './aboutImages/chimps.png';
 import downIcon from './aboutImages/down icon.png';
+import CreatDivs from './aboutCards/AboutCards';
 
 function About() {
   const aboutBodyTranslate = () => {
@@ -51,15 +52,11 @@ function About() {
       </div>
 
       <div className="about__body">
-        <div className="about__hero--col1">
-          <Heading />
-          <h1>We are dedicated to providing the best travel experience.</h1>
-          <p>Discover the Land of a Thousand Hills</p>
-          {aboutBodyTranslate()}
+        <div className="about__body--col1">
+          <Heading text2="Welcome to Africa Wizzy Safari" />
+          <div className="underline" />
         </div>
-      </div>
-      <div>
-        <p>go</p>
+        <CreatDivs />
       </div>
     </>
   );
