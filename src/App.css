@@ -13,8 +13,8 @@ body {
 }
 
 .navBar__holder {
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
   height: fit-content;
   min-height: 167px;
-  padding: 30px;
+  /* padding: 30px; */
 }

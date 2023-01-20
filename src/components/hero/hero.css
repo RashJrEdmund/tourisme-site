@@ -6,7 +6,7 @@
   background: linear-gradient(#00000070, #00000070, #00000070), url(../../images/hero\ bg.png);
   background-size: cover;
   background-position: center;
-  width: 100v2;
+  width: 100vw;
   height: 100vh;
   max-height: 795px;
   display: flex;

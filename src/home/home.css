@@ -41,6 +41,15 @@
   align-items: center;
 }
 
+.body__ul-div img {
+  margin-left: 10px;
+}
+
+.body__ul-div img.last__imageIcon {
+  margin-left: 40px;
+}
+
+
 .body__ul-div ul {
   list-style: none;
   margin: 0 10px;

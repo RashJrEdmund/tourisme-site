@@ -1,3 +1,135 @@
 * {
   box-sizing: border-box;
 }
+
+.about__hero {
+  width: 100vw;
+  height: 100vh;
+  max-height: 795px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 55% 1fr;
+  align-items: center;
+}
+
+.about__hero .about__hero--col1 {
+  background-color: pink;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__hero .about__hero--col1--sub {
+  background-color: purple;
+  height: fit-content;
+  width: fit-content;
+  max-width: 608px;
+  display: flex;
+  flex-direction: column;
+  word-break: normal;
+  margin: 4.5rem auto 0;
+  padding: 5px;
+}
+
+.about__hero .about__hero--col1 h1 {
+  background-color: green;
+  color: #000;
+  font-family: Lora;
+  font-style: bold;
+  font-size: 62px;
+  line-height: 120%;
+  letter-spacing: 0.3%;
+  margin: 0;
+}
+
+.about__hero .about__hero--col1 p {
+  color: #000;
+  font-family: Lora;
+  font-size: 20px;
+  line-height: 125%;
+  max-width: 608px;
+  letter-spacing: 0.5%;
+  margin: 41px 0 40px;
+}
+
+/* THIS IS THE ABOUT TRANSLATED PART */
+
+.aboutBody__translated {
+  background-color: #fff;
+  background-color: #304f47;
+  height: fit-content;
+  width: 90vw;
+  max-width: 816px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: 0 auto;
+  padding: 16px 32px;
+  border-radius: 8px;
+  z-index: 2;
+}
+
+.aboutBody__ul-div {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.aboutBody__ul-div ul {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.aboutBody__ul-div ul > li:nth-of-type(1) {
+  list-style: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0.008em;
+  color: #9a9ab0;
+  margin: 0 0 5px;
+}
+
+.aboutBody__ul-div ul > li:nth-of-type(2) {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: left;
+  letter-spacing: 0.005em;
+  color: #000;
+  margin: 5px 0 0;
+}
+
+.aboutBody__ul-div img {
+  margin-left: 10px;
+}
+
+.aboutBody__ul-div img.last__imageIcon {
+  margin-left: 40px;
+}
+
+/* Ending the about__hero--col1, starting col2 */
+
+.about__hero .about__hero--col2 {
+  height: 100%;
+  width: 100%;
+}
+
+.about__hero .about__hero--col2 img {
+  height: 100vh;
+  max-height: 795px;
+  width: 100%;
+  margin: 0;
+}
+
+/* THIS IS THE BODY SECTION */
+
+.about__body {
+  background-color: purple;
+  width: 100vw;
+  max-width: 1224px;
+  margin: 0 auto;
+}
