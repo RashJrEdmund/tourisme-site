@@ -47,3 +47,14 @@
   color: #000;
   margin: 43px auto 0;
 }
+
+.heading_component__p4 {
+  color: #515151;
+  max-width: 1118px;
+  font-family: Mulish;
+  font-size: 24px;
+  line-height: 125%;
+  letter-spacing: 0.5%;
+  text-align: left;
+  margin: 24px auto 108px;
+}

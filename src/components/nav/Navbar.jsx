@@ -59,7 +59,7 @@ function NavBar() {
           </ul>
           <img className="menu-icon" src={menuIcon} alt="hamburger menu" />
         </div>
-        <Button text="Sign In" color="#c7923e" />
+        <Button text="Submit" color="#c7923e" />
       </div>
     </div>
   );

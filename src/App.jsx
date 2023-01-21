@@ -7,6 +7,8 @@ import Footer from './components/footer/Footer';
 import Home from './home/home';
 import About from './about/about';
 import Tour from './tour/tour';
+// import Gallery from './gallery/gallery';
+import Contact from './contact/contact';
 
 // import { themeObject, ThemeProvider } from './components/context/theme.context';
 
@@ -39,7 +41,8 @@ function App() {
             <Route index path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/tour" element={<Tour />} />
-            <Route path="/tour" element={<Tour />} />
+            {/* <Route path="/gallery" element={<Gallery />} /> */}
+            <Route path="/contact" element={<Contact />} />
           </Routes>
           <Footer />
         </BrowserRouter>
