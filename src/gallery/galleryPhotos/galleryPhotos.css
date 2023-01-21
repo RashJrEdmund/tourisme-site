@@ -1,7 +1,103 @@
 * {
   box-sizing: border-box;
+  height: max-content;
+}
+
+:root {
+  --comongap: 10px;
 }
 
 .galleryPhotos {
   background-color: brown;
+}
+
+/* starting the crazies grid setup so far */
+
+.galleryPhotos .galleryPhotos__rowCard {
+  background-color: burlywood;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  gap: var(--comongap);
+  height: 510px;
+}
+
+.galleryPhotos .galleryPhotos__rowCard img {
+  width: 100%;
+  height: 100%;
+  height: 50%;
+}
+
+.subOfSub1,
+.subOfSub2 {
+  border-color: brown;
+  width: 100%; 
+  height: 100%;
+  border: 2px solid purple;
+}
+
+/* Starting .rowCard__mainCol1 */
+
+.galleryPhotos__rowCard .rowCard__mainCol1 {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--comongap);
+}
+
+.rowCard__mainCol1 .mainCol1__subCol1 {
+  background-color: steelblue;
+  display: grid;
+  grid-template-rows: 50%;
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+}
+
+.rowCard__mainCol1 .mainCol1__subCol2 {
+  background-color: red;
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+}
+
+/* Starting .rowCard__mainCol2 */
+
+.galleryPhotos__rowCard .rowCard__mainCol2 {
+  background-color: gold;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  gap: var(--comongap);
+}
+
+.rowCard__mainCol2 .mainCol2__subCol1,
+.rowCard__mainCol2 .mainCol2__subCol2 {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
+
+
+/* Starting .rowCard__mainCol3 */
+
+.galleryPhotos__rowCard .rowCard__mainCol3 {
+  background-color: black;
+  height: 100%;
+  max-height: 510px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: var(--comongap);
+}
+
+.rowCard__mainCol3 .mainCol3__subCol2 {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--comongap);
 }
