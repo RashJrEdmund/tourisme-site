@@ -48,7 +48,7 @@
   margin: 0;
 }
 
-/* Next function: createIconDivs */
+/* Next function: createIconCards */
 
 .iconDivs {
   display: flex;
@@ -72,7 +72,6 @@
 }
 
 .iconDivs__iconDiv:hover {
-  box-shadow: 0 0 10px #000;
   transform: translateY(-10%);
 }
 
