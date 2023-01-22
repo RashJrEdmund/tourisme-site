@@ -4,7 +4,8 @@
 }
 
 :root {
-  --comongap: 10px;
+  --comonGap: 10px;
+  --comonTrans: 0.5s;
 }
 
 .galleryPhotos {
@@ -13,26 +14,31 @@
 
 /* starting the crazies grid setup so far */
 
-.galleryPhotos .galleryPhotos__rowCard {
-  background-color: burlywood;
-  display: grid;
-  grid-template-columns: 2fr 1fr 2fr;
-  gap: var(--comongap);
-  height: 510px;
+.galleryPhotos .galleryPhotos__rowCard * {
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.galleryPhotos .galleryPhotos__rowCard img {
-  width: 100%;
-  height: 100%;
-  height: 50%;
+.galleryPhotos .galleryPhotos__rowCard {
+  background-color: gold;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  gap: var(--comonGap);
+  height: 510px;
+  margin: 1rem 0;
 }
 
 .subOfSub1,
 .subOfSub2 {
-  border-color: brown;
   width: 100%; 
   height: 100%;
-  border: 2px solid purple;
+  transition: var(--comonTrans);
+}
+
+.subOfSub1:hover,
+.subOfSub2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px;
 }
 
 /* Starting .rowCard__mainCol1 */
@@ -42,62 +48,80 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--comongap);
+  gap: var(--comonGap);
 }
 
 .rowCard__mainCol1 .mainCol1__subCol1 {
-  background-color: steelblue;
   display: grid;
   grid-template-rows: 50%;
   height: 100%;
   width: 100%;
-  padding: 5px;
+  gap: var(--comonGap);
 }
 
 .rowCard__mainCol1 .mainCol1__subCol2 {
-  background-color: red;
   height: 100%;
   width: 100%;
   padding: 5px;
+  transition: var(--comonTrans);
+}
+
+.rowCard__mainCol1 .mainCol1__subCol2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px;
 }
 
 /* Starting .rowCard__mainCol2 */
 
 .galleryPhotos__rowCard .rowCard__mainCol2 {
-  background-color: gold;
   height: 100%;
   width: 100%;
   display: grid;
   grid-template-rows: 2fr 1fr;
-  gap: var(--comongap);
+  gap: var(--comonGap);
 }
 
 .rowCard__mainCol2 .mainCol2__subCol1,
 .rowCard__mainCol2 .mainCol2__subCol2 {
-  background-color: black;
   height: 100%;
   width: 100%;
+  transition: var(--comonTrans);
+}
+
+.rowCard__mainCol2 .mainCol2__subCol1:hover,
+.rowCard__mainCol2 .mainCol2__subCol2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px;
 }
 
 
 /* Starting .rowCard__mainCol3 */
 
 .galleryPhotos__rowCard .rowCard__mainCol3 {
-  background-color: black;
   height: 100%;
   max-height: 510px;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: var(--comongap);
+  gap: var(--comonGap);
+}
+
+.rowCard__mainCol3 .mainCol3__subCol1 {
+  height: 100%;
+  width: 100%;
+  transition: var(--comonTrans);
+}
+
+.rowCard__mainCol3 .mainCol3__subCol1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px;
 }
 
 .rowCard__mainCol3 .mainCol3__subCol2 {
-  background-color: white;
   height: 100%;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--comongap);
+  gap: var(--comonGap);
 }

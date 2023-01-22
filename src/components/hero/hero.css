@@ -17,13 +17,24 @@
 
 .hero .text1,
 .hero .text3 {
+  background-color: gold;
   color: #fff;
-  max-width: 669px;
+  width: 90vw;
+  max-width: 1070px;
   align-self: flex-start;
-  margin-left: 3rem;
+  margin: 0 auto;
   font-size: 62px;
   font-weight: 700;
   font-family: 'Lora', serif;
+}
+
+.hero .text1 span,
+.hero .text3 span {
+  background-color: brown;
+  color: #fff;
+  width: 100%;
+  /* max-width: 669px; */
+  margin: 0;
 }
 
 .hero .text2,
@@ -38,11 +49,12 @@
 }
 
 .hero__navigation {
+  background-color: gold;
   width: 90vw;
   max-width: 1070px;
   display: flex;
   justify-content: space-between;
-  margin-top: 4.5rem;
+  margin-top: 4.5rem auto;
 }
 
 .hero__navigation img {
