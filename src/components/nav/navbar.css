@@ -61,7 +61,6 @@
 
 .navbar__bottomNav {
   background: none;
-  position: relative;
   color: #fff;
   display: flex;
   flex-wrap: wrap;
@@ -95,6 +94,7 @@
   position: relative;
   list-style: none;
   display: flex;
+  flex-wrap: nowrap;
   align-self: center;
   width: fit-content;
   margin-left: 1.5rem;
@@ -116,38 +116,67 @@
 }
 
 @media only screen and (max-width: 600px) {
-  /* .bottomNav__sub1 ul {
-    background-color: brown;
-    position: absolute;
-    top: 0;
-    right: 0;
-    right: -100%;
-    flex-direction: column;
-    margin: 0;
-    transition: 0.5s;
-  } */
-
-  /* .bottomNav__sub1 .close-menu-icon {
-    display: unset;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 50px;
-    width: 50px;
-    margin: 10px;
-  } */
-
-  /* .bottomNav__sub1 .menu-icon {
-    display: unset;
-    position: absolute;
-    height: 50px;
-    width: 50px;
-    top: 0;
-    right: 0;
-    margin: 10px;
+  .navbar__topNav {
+    display: none;
   }
 
-  .bottomNav__sub1 .menu-icon.not-active {
-    display: none;
-  } */
+  .navbar__bottomNav {
+    background-color: #304f47;
+    color: #fff;
+    position: relative;
+    justify-content: space-between;
+    padding: 10px 1rem;
+  }
+
+  .navbar__bottomNav .bottomNav__sub1 {
+    background-color: green;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .navbar__bottomNav .logo {
+    margin: 0;
+  }
+  
+  .navbar__bottomNav ul {
+    background-color: #304f47;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70vw;
+    height: 100vh;
+    transition: 0.5s;
+  }
+
+  .navbar__bottomNav ul.open {
+    right: 0;
+  }
+
+  .navbar__bottomNav ul li {
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 2rem 1rem;
+    transition: 0.5s;
+    z-index: 6;
+  }
+
+  .navbar__bottomNav ul li:hover {
+    background-color: #c7923e;
+  }
+
+  .navbar__bottomNav .close-menu-icon {
+    display: unset;
+    width: 70px;
+    height: 70px;
+    align-self: flex-end;
+  }
+
+  .bottomNav__sub1 .menu-icon {
+    display: unset;
+    width: 50px;
+    height: 60px;
+  }
 }

@@ -10,6 +10,7 @@ function Hero({ text1, text2, text3, text4, spanText, createHeroNav = true }) {
       <h1 className="text1">
         <span>{text1}</span>
       </h1>
+
       <h3 className="text2">
         <span>{text2}</span>
       </h3>
@@ -25,6 +26,7 @@ function Hero({ text1, text2, text3, text4, spanText, createHeroNav = true }) {
             )}`
           : ''}
       </h3>
+
       <div className="hero__navigation">
         {createHeroNav ? (
           <>

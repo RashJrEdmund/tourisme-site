@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import './navbar.css';
 import { Link } from 'react-router-dom';
 import Button from '../button/Button';
@@ -10,10 +12,11 @@ import Ig from '../../images/instagram.png';
 import closeMenu from '../../images/closeMenu.png';
 import menuIcon from '../../images/menu-icon.svg';
 
-/* const toggleIcon = (e) => {
-  // e.target.classList.toggle('not-active');
-  console.log('click');
-}; */
+const toggleIcon = () => {
+  // const varyingUl = document.getElementById('varying-ul');
+  // varyingUl.classList.toggle('open');
+  console.log('click works');
+};
 
 function NavBar() {
   return (
@@ -38,8 +41,13 @@ function NavBar() {
       <div className="navbar__bottomNav">
         <div className="bottomNav__sub1">
           <div className="logo" />
-          <ul>
-            <img className="close-menu-icon" src={closeMenu} alt="close_menu" />
+          <ul className="varying-ul" id="varying-ul">
+            <img
+              className="close-menu-icon"
+              src={closeMenu}
+              alt="close_menu"
+              onClick={toggleIcon()}
+            />
             <Link to="/">
               <li>Home</li>
             </Link>
@@ -59,7 +67,7 @@ function NavBar() {
           </ul>
           <img className="menu-icon" src={menuIcon} alt="hamburger menu" />
         </div>
-        <Button text="Submit" color="#c7923e" />
+        <Button text="Sign In" color="#c7923e" />
       </div>
     </div>
   );

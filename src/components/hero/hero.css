@@ -32,8 +32,10 @@
 .hero .text3 span {
   background-color: brown;
   color: #fff;
+  color: black;
   width: 100%;
-  /* max-width: 669px; */
+  width: 40px;
+  max-width: 669px;
   margin: 0;
 }
 
