@@ -82,5 +82,6 @@
 
   .naturePhotos__imageDiv {
     margin: 34px auto;
+    max-height: 530px;
   }
 }

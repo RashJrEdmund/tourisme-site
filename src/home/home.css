@@ -76,9 +76,29 @@
 }
 
 .home__imageDivs {
+  background-color: green;
   display: flex;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: visible;
   flex-wrap: nowrap;
   width: 100%;
   height: fit-content;
+}
+
+@media only screen and (max-width: 600px) {
+  .body__translated {
+    max-width: 1224px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .body__translated input {
+    max-width: none;
+  }
+
+  .body__translated .body__ul-div {
+    width: 100%;
+    margin: 1rem 0;
+  }
 }

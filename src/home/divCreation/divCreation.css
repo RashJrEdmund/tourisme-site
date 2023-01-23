@@ -54,6 +54,7 @@
   display: flex;
   width: 100%;
   height: fit-content;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-evenly;
   margin: 107px auto;
@@ -97,8 +98,10 @@
 
 .avatarCardDivs {
   width: 100%;
+  max-width: 98vw;
   height: fit-content;
   display: flex;
+  flex-wrap: nowrap;
   align-content: center;
   justify-content: space-between;
   margin-bottom: 73px;
@@ -107,8 +110,6 @@
 .avatarCard {
   width: 300px;
   height: 380px;
-  left: 140px;
-  top: 4269px;
   background: #fff;
   border: 1px solid #0000001a;
   box-shadow: 0px 4px 4px #00000040;
@@ -186,4 +187,50 @@
 .buttonsAboveFooter__btn:hover,
 .buttonsAboveFooter__btn:nth-of-type(1):hover {
   transform: translateY(-8px);
+}
+
+@media only screen and (max-width: 600px) {
+  /* creatIconCards() */
+
+  .iconDivs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 98vw;
+  }
+
+  .iconDivs .iconDivs__iconDiv {
+    margin: 1rem 0;
+  }
+
+  /* createAvatarCards() */
+
+  .avatarCardDivs {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .avatarCard {
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem auto;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .home__imageDivs .createdImages__newImage {
+    /* background-color: gold;
+    max-height: 400px; */
+  }
+
+  .iconDivs {
+    grid-template-columns: 1fr;
+  }
+
+  .iconDivs .iconDivs__iconDiv {
+    margin: 1rem auto;
+  }
+
+  .avatarCardDivs .avatarCard {
+    height: 360px;
+  }
 }
