@@ -3,7 +3,6 @@
 }
 
 .about__hero {
-  background-color: gold;
   width: 100vw;
   height: fit-content;
   max-height: 795px;
@@ -11,6 +10,7 @@
   display: grid;
   grid-template-columns: 55% 1fr;
   align-items: center;
+  z-index: -1;
 }
 
 .about__hero .about__hero--col1 {
@@ -19,7 +19,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 3;
+  z-index: -1;
 }
 
 .about__hero .about__hero--col1--sub {

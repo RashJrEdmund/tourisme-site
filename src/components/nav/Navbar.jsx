@@ -9,13 +9,22 @@ import Fb from '../../images/FB.png';
 import Tw from '../../images/tweetter.png';
 import In from '../../images/linkedin.png';
 import Ig from '../../images/instagram.png';
-import closeMenu from '../../images/closeMenu.png';
-import menuIcon from '../../images/menu-icon.svg';
 
 const toggleIcon = () => {
-  // const varyingUl = document.getElementById('varying-ul');
-  // varyingUl.classList.toggle('open');
+  const varyingUl = document.getElementById('varying-ul');
+  varyingUl.classList.toggle('open');
   console.log('click works');
+  // console.log('this ', document.getElementById('varying-ul'));
+  const varyingUlAtags = document.querySelectorAll(
+    '.className="varying-ul--aTag"'
+  );
+
+  varyingUlAtags.forEach((aTag) => {
+    aTag.addEventListener('click', () => {
+      console.log('code works');
+      varyingUl.classList.remove('open');
+    });
+  });
 };
 
 function NavBar() {
@@ -42,30 +51,39 @@ function NavBar() {
         <div className="bottomNav__sub1">
           <div className="logo" />
           <ul className="varying-ul" id="varying-ul">
-            <img
+            <button
               className="close-menu-icon"
-              src={closeMenu}
               alt="close_menu"
-              onClick={toggleIcon()}
+              type="button"
+              onClick={() => {
+                toggleIcon();
+              }}
             />
             <Link to="/">
-              <li>Home</li>
+              <li className="varying-ul--aTag">Home</li>
             </Link>
             <Link to="/about">
-              <li>About</li>
+              <li className="varying-ul--aTag">About</li>
             </Link>
             <Link to="/tour">
-              <li>Tour Package</li>
+              <li className="varying-ul--aTag">Tour Package</li>
             </Link>
             <Link to="/gallery">
-              <li>Gallery</li>
+              <li className="varying-ul--aTag">Gallery</li>
             </Link>
-            <li>Blog</li>
+            <li className="varying-ul--aTag">Blog</li>
             <Link to="/contact">
-              <li>Contact Us</li>
+              <li className="varying-ul--aTag">Contact Us</li>
             </Link>
           </ul>
-          <img className="menu-icon" src={menuIcon} alt="hamburger menu" />
+          <button
+            type="button"
+            className="menu-icon"
+            alt="hamburger menu"
+            onClick={() => {
+              toggleIcon();
+            }}
+          />
         </div>
         <Button text="Sign In" color="#c7923e" />
       </div>
