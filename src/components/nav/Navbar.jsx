@@ -59,6 +59,7 @@ function NavBar() {
           <img src={Ig} alt="ig" />
         </div>
       </div>
+
       <div className="navbar__bottomNav">
         <div className="bottomNav__sub1">
           <div className="logo" />
@@ -66,14 +67,23 @@ function NavBar() {
           {/* THIS IS WHERE THE ROUTE LINKS ARE MADE */}
 
           <ul className="varying-ul" id="varying-ul">
-            <button // this is the close menu icon
-              className="close-menu-icon"
-              alt="close_menu"
-              type="button"
-              onClick={() => {
-                removeSideMenu();
-              }}
-            />
+            {/* This is the top of the Mobile sideNav */}
+
+            <div className="varying-ul--top">
+              <span className="navbar__bottomNav--button1">
+                <Button text="Sign In" color="#c7923e" />
+              </span>
+
+              <button // this is the close menu icon
+                className="close-menu-icon"
+                alt="close_menu"
+                type="button"
+                onClick={() => {
+                  removeSideMenu();
+                }}
+              />
+            </div>
+
             <Link
               to="/"
               className="varying-ul--aTag"
@@ -140,7 +150,7 @@ function NavBar() {
             }}
           />
         </div>
-        <span className="navbar__bottomNav--button">
+        <span className="navbar__bottomNav--button2">
           <Button text="Sign In" color="#c7923e" />
         </span>
       </div>
