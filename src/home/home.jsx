@@ -1,11 +1,12 @@
 import './home.css';
-import Hero from '../components/hero/Hero';
 import Button from '../components/button/Button';
 import Heading from '../components/heading/Heading';
 import downIcon from '../images/down icon.png';
 import NaturePhotos from '../components/naturePhotos/NaturePhotos';
 import ChangePageBtns from '../components/changePageBtns/ChangePageBtns';
 import cards from './divCreation/DivCreation';
+import goLeft from '../images/navigateLeft.png';
+import goRight from '../images/navigateRight.png';
 
 function Home() {
   const homeBodyTranslate = () => {
@@ -40,13 +41,21 @@ function Home() {
 
   return (
     <>
-      <Hero
-        text1="Experience the beauty of Rwanda with us"
-        text2="Discover the Land of a Thousand Hills"
-        text3=""
-        text4=""
-        spanText="goat"
-      />
+      <div className="home__hero">
+        <h1 className="text1">
+          <span>Experience the beauty of Rwanda with us</span>
+        </h1>
+
+        <h3 className="text2">
+          <span>Experience the beauty of Rwanda with us</span>
+        </h3>
+
+        <div className="home__hero__navigation">
+          <img src={goLeft} alt="navigate_Left" />
+          <img src={goRight} alt="navigate_Right" />
+        </div>
+      </div>
+
       <div className="homebody">
         {homeBodyTranslate()}
         <Heading

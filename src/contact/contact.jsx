@@ -7,7 +7,7 @@ import Hero from '../components/hero/Hero';
 function Contact() {
   return (
     <>
-      <Hero text3="Contact Us" text4="Home" spanText="Contact" />
+      <Hero text1="Contact Us" text2="Home" spanText="Contact" />
       <div className="contactBody">
         <Heading
           text3="Get in Touch"

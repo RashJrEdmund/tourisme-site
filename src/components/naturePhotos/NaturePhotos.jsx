@@ -1,12 +1,13 @@
+/* eslint-disable react/no-array-index-key */
 import './naturePhotos.css';
 import data from './naturePhotos.json';
 import Button from '../button/Button';
 
 function NaturePhotos() {
   const renderNaturePhotos = () => {
-    return data.map((piece) => {
+    return data.map((piece, index) => {
       return (
-        <div className="naturePhotos__imageDiv">
+        <div className="naturePhotos__imageDiv" key={index}>
           <div
             className="naturePhotos__imageDiv--image"
             style={{ backgroundImage: `URL(${piece.src})` }}

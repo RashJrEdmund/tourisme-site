@@ -13,10 +13,10 @@ import galleryImg from '../galleryImages/galleryImages.json';
 // import photo1P8 from '../galleryImages/photo 1-8.png';
 
 const renderGalleryPhotos = () => {
-  /* return data.map((piece) => {
+  /* return data.map((piece, index) => {
     return piece.map((subPiece) => {
       return (
-        <div className="galleryPhotos__rowCard">
+        <div className="galleryPhotos__rowCard" key={index}>
           <div className="rowCard__mainCol1">
             <div className="mainCol1__subCol1">
               <div

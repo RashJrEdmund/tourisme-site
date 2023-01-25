@@ -2,6 +2,8 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import './navbar.css';
 import { Link } from 'react-router-dom';
+// import { useState } from 'react';
+
 import Button from '../button/Button';
 import phone from '../../images/phone.png';
 import mail from '../../images/mail.png';
@@ -13,19 +15,29 @@ import Ig from '../../images/instagram.png';
 const toggleIcon = () => {
   const varyingUl = document.getElementById('varying-ul');
   varyingUl.classList.toggle('open');
-  console.log('click works');
-  // console.log('this ', document.getElementById('varying-ul'));
-  const varyingUlAtags = document.querySelectorAll(
-    '.className="varying-ul--aTag"'
-  );
+};
 
-  varyingUlAtags.forEach((aTag) => {
-    aTag.addEventListener('click', () => {
-      console.log('code works');
-      varyingUl.classList.remove('open');
+const removeSideMenu = () => {
+  document.getElementById('varying-ul').classList.remove('open');
+};
+
+/* cosnt [decorate, setDecorate] = useState([
+  { stl: 'border-bottom: 1px solid #304f47;' },
+  { stl: 'border-bottom: unset;' },
+  { stl: 'border-bottom: unset;' },
+  { stl: 'border-bottom: unset;' },
+  { stl: 'border-bottom: unset;' },
+]);
+
+function underline(i) {
+  setDecorate(() => {
+    decorate.map((element, index) => {
+      return (
+        {index === i ? { stl: 'border-bottom: 1px solid #304f47;' } : { stl: 'border-bottom: unset;' }}
+      )
     });
   });
-};
+} */
 
 function NavBar() {
   return (
@@ -50,30 +62,73 @@ function NavBar() {
       <div className="navbar__bottomNav">
         <div className="bottomNav__sub1">
           <div className="logo" />
+
+          {/* THIS IS WHERE THE ROUTE LINKS ARE MADE */}
+
           <ul className="varying-ul" id="varying-ul">
-            <button
+            <button // this is the close menu icon
               className="close-menu-icon"
               alt="close_menu"
               type="button"
               onClick={() => {
-                toggleIcon();
+                removeSideMenu();
               }}
             />
-            <Link to="/">
-              <li className="varying-ul--aTag">Home</li>
+            <Link
+              to="/"
+              className="varying-ul--aTag"
+              onClick={() => {
+                removeSideMenu();
+                // underline(0);
+              }}
+            >
+              <li>Home</li>
             </Link>
-            <Link to="/about">
-              <li className="varying-ul--aTag">About</li>
+
+            <Link
+              to="/about"
+              className="varying-ul--aTag"
+              onClick={() => {
+                removeSideMenu();
+                // underline(1);
+              }}
+            >
+              <li>About</li>
             </Link>
-            <Link to="/tour">
-              <li className="varying-ul--aTag">Tour Package</li>
+
+            <Link
+              to="/tour"
+              className="varying-ul--aTag"
+              onClick={() => {
+                removeSideMenu();
+                // underline(2);
+              }}
+            >
+              <li>Tour Package</li>
             </Link>
-            <Link to="/gallery">
-              <li className="varying-ul--aTag">Gallery</li>
+
+            <Link
+              to="/gallery"
+              className="varying-ul--aTag"
+              onClick={() => {
+                removeSideMenu();
+                // underline(3);
+              }}
+            >
+              <li>Gallery</li>
             </Link>
-            <li className="varying-ul--aTag">Blog</li>
-            <Link to="/contact">
-              <li className="varying-ul--aTag">Contact Us</li>
+
+            <li>Blog</li>
+
+            <Link
+              to="/contact"
+              className="varying-ul--aTag"
+              onClick={() => {
+                removeSideMenu();
+                // underline(4);
+              }}
+            >
+              <li>Contact Us</li>
             </Link>
           </ul>
           <button
@@ -85,7 +140,9 @@ function NavBar() {
             }}
           />
         </div>
-        <Button text="Sign In" color="#c7923e" />
+        <span className="navbar__bottomNav--button">
+          <Button text="Sign In" color="#c7923e" />
+        </span>
       </div>
     </div>
   );

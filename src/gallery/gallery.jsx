@@ -6,7 +6,7 @@ import GalleryPhotos from './galleryPhotos/GalleryPhotos';
 function Gallery() {
   return (
     <>
-      <Hero text3="Gallery" text4="Home" spanText="Gallery" />
+      <Hero text1="Gallery" text2="Home" spanText="Gallery" />
 
       <div className="galleryBody">
         <div className="gallery__btn">

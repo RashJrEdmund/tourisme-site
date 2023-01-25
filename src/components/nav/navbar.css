@@ -111,6 +111,14 @@
   font-size: 17px;
 }
 
+.bottomNav__sub1 ul li:hover {
+  border-bottom: 1px solid #304f47;
+}
+/* use this to do the navbar movement thing */
+.active{
+  border-bottom: 1px solid #304f47;
+}
+
 .bottomNav__sub1 .menu-icon,
 .bottomNav__sub1 .close-menu-icon {
   display: none;
@@ -126,15 +134,15 @@
     color: #fff;
     position: relative;
     justify-content: space-between;
-    padding: 10px 1rem;
+    padding: 10px 0;
   }
 
   .navbar__bottomNav .bottomNav__sub1 {
-    background-color: green;
-    width: 100%;
+    width: 98vw;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
+    margin: 0 auto;
   }
 
   .navbar__bottomNav .logo {
@@ -150,6 +158,7 @@
     width: 70vw;
     height: 100vh;
     transition: 0.5s;
+    border-left: 1px solid #888;
   }
 
   .navbar__bottomNav .varying-ul.open {
@@ -187,5 +196,9 @@
     display: unset;
     width: 55px;
     height: 45px;
+  }
+
+  .navbar__bottomNav .navbar__bottomNav--button {
+    margin-left: 10px;
   }
 }
