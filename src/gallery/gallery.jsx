@@ -12,9 +12,7 @@ function Gallery() {
         <div className="gallery__btn">
           <Button text="Open Instagram" color="#c7923e" />
         </div>
-        <div className="galleryBody__photos">
-          <GalleryPhotos />
-        </div>
+        <GalleryPhotos />
       </div>
     </>
   );
