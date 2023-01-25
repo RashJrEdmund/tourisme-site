@@ -76,7 +76,6 @@
 }
 
 .home__imageDivs {
-  background-color: green;
   display: flex;
   overflow-x: auto;
   overflow-y: visible;
@@ -85,7 +84,7 @@
   height: fit-content;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .body__translated {
     max-width: 1224px;
     display: flex;
@@ -100,5 +99,9 @@
   .body__translated .body__ul-div {
     width: 100%;
     margin: 1rem 0;
+  }
+
+  .home__imageDivs {
+    margin: 1rem auto;
   }
 }

@@ -3,7 +3,6 @@
 }
 
 .galleryBody {
-  background-color: peru;
   color: #000;
   width: 100vw;
   max-width: 1224px;
@@ -20,4 +19,10 @@
 
 .galleryBody__photos {
   margin: 92px 0 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .galleryBody {
+    padding: 2rem 0;
+  }
 }

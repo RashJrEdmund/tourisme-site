@@ -1,7 +1,6 @@
 import './about.css';
 import Heading from '../components/heading/Heading';
 import Button from '../components/button/Button';
-import chimps from './aboutImages/chimps.png';
 import downIcon from './aboutImages/down icon.png';
 import CreatDivs from './aboutCards/AboutCards';
 
@@ -48,9 +47,7 @@ function About() {
           </div>
         </div>
 
-        <div className="about__hero--col2">
-          <img src={chimps} alt="an_image_of_two_monkeys" />
-        </div>
+        <div className="about__hero--col2" />
       </div>
 
       <div className="about__body">

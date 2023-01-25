@@ -3,8 +3,9 @@
 }
 
 .about__hero {
+  background-color: gold;
   width: 100vw;
-  height: 100vh;
+  height: fit-content;
   max-height: 795px;
   margin: 0;
   display: grid;
@@ -18,6 +19,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 3;
 }
 
 .about__hero .about__hero--col1--sub {
@@ -121,15 +123,12 @@
 /* Ending the about__hero--col1, starting col2 */
 
 .about__hero .about__hero--col2 {
-  height: 100%;
-  width: 100%;
-}
-
-.about__hero .about__hero--col2 img {
+  background: url("./aboutImages/chimps.png");
+  background-position: center;
+  background-size: cover;
   height: 100vh;
   max-height: 795px;
   width: 100%;
-  margin: 0;
 }
 
 /* THIS IS THE BODY SECTION */
@@ -153,4 +152,49 @@
   width: 280px;
   height: 10px;
   margin: 74px auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .about__hero {
+    height: fit-content;
+    max-height: none;
+    grid-template-columns: 1fr;
+  }
+
+  .about__hero .about__hero--col1 {
+    background: url("./aboutImages/chimps.png");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .about__hero .about__hero--col1 h1,
+  .about__hero .about__hero--col1 p {
+    background: linear-gradient(to right, #0000001c, #0000001c);
+    color: #fff;
+  }
+
+  .about__hero .about__hero--col2 {
+    display: none;
+  }
+
+  .aboutBody__translated {
+    background-color: #304f47;
+    flex-direction: column;
+    align-content: unset;
+    height: fit-content;
+    width: 90vw;
+    max-width: 816px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-self: center;
+    margin: 0 auto;
+    padding: 16px 32px;
+    border-radius: 8px;
+    z-index: 2;
+  }
+
+  .aboutBody__ul-div {
+    width: 100%;
+  }
 }

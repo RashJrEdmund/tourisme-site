@@ -30,7 +30,9 @@ function Tour() {
       />
       <div className="tourBody">
         <div className="tourPhotos">{renderTourPhotos()}</div>
-        <ChangePageBtns width="100%" position="flex-end" />
+        <div className="tourBody__changePageBtn">
+          <ChangePageBtns width="100%" position="flex-end" />
+        </div>
       </div>
     </>
   );
