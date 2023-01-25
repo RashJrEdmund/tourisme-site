@@ -117,8 +117,9 @@
 .bottomNav__sub1 ul li:hover {
   border-bottom: 1px solid #304f47;
 }
+
 /* use this to do the navbar movement thing */
-.active{
+.active {
   border-bottom: 1px solid #304f47;
 }
 
@@ -132,7 +133,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     border-bottom: 1px solid #777;
   }
 
@@ -145,7 +146,8 @@
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 0.5rem;;
+    padding: 1rem 0.5rem;
+    ;
   }
 
   .navbar__bottomNav {
@@ -171,7 +173,7 @@
   .navbar__bottomNav .logo {
     margin: 0;
   }
-  
+
   .navbar__bottomNav .varying-ul {
     background-color: #304f47;
     flex-direction: column;
