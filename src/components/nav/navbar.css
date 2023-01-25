@@ -17,7 +17,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  z-index: 3;
+  z-index: 5;
 }
 
 .navbar__topNav {
@@ -69,6 +69,7 @@
   gap: 2rem;
   margin: 0;
   padding: var(--custom-padding);
+  z-index: 5;
 }
 
 .bottomNav__sub1 {
@@ -132,6 +133,7 @@
     background-color: green;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: nowrap;
   }
 
@@ -172,9 +174,10 @@
     background-size: cover;
     background-position: center;
     display: unset;
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 60px;
     align-self: flex-end;
+    margin: 1rem 1.5rem;
   }
 
   .bottomNav__sub1 .menu-icon {
@@ -182,7 +185,7 @@
     background-size: cover;
     background-position: center;
     display: unset;
-    width: 50px;
-    height: 60px;
+    width: 55px;
+    height: 45px;
   }
 }

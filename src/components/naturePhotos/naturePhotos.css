@@ -25,6 +25,7 @@
   height: 584px;
   display: flex;
   flex-direction: column;
+  z-index: 1;
   transition: 0.5s;
 }
 
@@ -32,10 +33,13 @@
   box-shadow: 0 0 10px #222;
 }
 
-.naturePhotos__imageDiv img {
+.naturePhotos__imageDiv--image {
+  background-size: cover;
+  background-position: center;
   height: 100%;
   width: 100%;
   max-height: 310px;
+  z-index: 1;
 }
 
 .naturePhotos__imageDiv header {

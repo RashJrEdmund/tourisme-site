@@ -7,7 +7,10 @@ function NaturePhotos() {
     return data.map((piece) => {
       return (
         <div className="naturePhotos__imageDiv">
-          <img src={piece.src} alt="photo_of_girrafe" />
+          <div
+            className="naturePhotos__imageDiv--image"
+            style={{ backgroundImage: `URL(${piece.src})` }}
+          />
           <header>{piece.header}</header>
           <p>{piece.paragraph}</p>
           <div className="naturePhotos__imageDiv--btn">
