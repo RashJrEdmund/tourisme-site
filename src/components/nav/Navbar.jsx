@@ -1,8 +1,5 @@
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import './navbar.css';
 import { Link } from 'react-router-dom';
-// import { useState } from 'react';
 
 import Button from '../button/Button';
 import phone from '../../images/phone.png';
@@ -20,24 +17,6 @@ const toggleIcon = () => {
 const removeSideMenu = () => {
   document.getElementById('varying-ul').classList.remove('open');
 };
-
-/* cosnt [decorate, setDecorate] = useState([
-  { stl: 'border-bottom: 1px solid #304f47;' },
-  { stl: 'border-bottom: unset;' },
-  { stl: 'border-bottom: unset;' },
-  { stl: 'border-bottom: unset;' },
-  { stl: 'border-bottom: unset;' },
-]);
-
-function underline(i) {
-  setDecorate(() => {
-    decorate.map((element, index) => {
-      return (
-        {index === i ? { stl: 'border-bottom: 1px solid #304f47;' } : { stl: 'border-bottom: unset;' }}
-      )
-    });
-  });
-} */
 
 function NavBar() {
   return (
@@ -87,9 +66,9 @@ function NavBar() {
             <Link
               to="/"
               className="varying-ul--aTag"
+              data-name="home"
               onClick={() => {
                 removeSideMenu();
-                // underline(0);
               }}
             >
               <li>Home</li>
@@ -100,7 +79,6 @@ function NavBar() {
               className="varying-ul--aTag"
               onClick={() => {
                 removeSideMenu();
-                // underline(1);
               }}
             >
               <li>About</li>
@@ -111,7 +89,6 @@ function NavBar() {
               className="varying-ul--aTag"
               onClick={() => {
                 removeSideMenu();
-                // underline(2);
               }}
             >
               <li>Tour Package</li>
@@ -122,7 +99,6 @@ function NavBar() {
               className="varying-ul--aTag"
               onClick={() => {
                 removeSideMenu();
-                // underline(3);
               }}
             >
               <li>Gallery</li>
@@ -135,7 +111,6 @@ function NavBar() {
               className="varying-ul--aTag"
               onClick={() => {
                 removeSideMenu();
-                // underline(4);
               }}
             >
               <li>Contact Us</li>
