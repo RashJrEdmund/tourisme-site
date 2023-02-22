@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+}
+
+/* function: createImageDivs */
+
+.home__imageDivs .createdImages__newImage {
+  min-width: 336px;
+  margin: 0 10px;
+  padding: 16px 20px 76px;
+  transition: 0.5s;
+}
+
+.home__imageDivs .createdImages__newImage:hover {
+  border: 1px solid #999;
+  background-color: unset;
+}
+
+.home__imageDivs .createdImages__newImage > img {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  border-radius: 50px;
+  border-radius: 50px;
+}
+
+.home__imageDivs .createdImages__newImage header {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 39px;
+  line-height: 120%;
+  letter-spacing: 0.005em;
+  color: #000;
+  margin: 41px 0 16px;
+}
+
+.home__imageDivs .createdImages__newImage p {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: 0.005em;
+  color: #9A9AB0;
+  margin: 0;
+}
+
+/* Next function: createIconCards */
+
+.iconDivs {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 107px auto;
+}
+
+.iconDivs__iconDiv {
+  background-color: #304f47;
+  width: 250px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.iconDivs__iconDiv:hover {
+  transform: translateY(-10%);
+}
+
+.iconDivs__iconDiv img {
+  width: 50px;
+  height: 50px;
+  margin: 29px auto 0;
+}
+
+
+.iconDivs__iconDiv p {
+  color: #fff;
+  max-width: 200px;
+  margin: 20px auto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.005em;
+}
+
+/* Next function: createAvatarCards */
+
+.avatarCardDivs {
+  width: 100%;
+  max-width: 98vw;
+  height: fit-content;
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  margin-bottom: 73px;
+}
+
+.avatarCard {
+  width: 300px;
+  height: 380px;
+  background: #fff;
+  border: 1px solid #0000001a;
+  box-shadow: 0px 4px 4px #00000040;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.avatarCard:hover {
+  background: #d3d3d386;
+  transform: translateY(-25px);
+}
+
+.avatarCard img {
+  width: 120px;
+  height: 120px;
+  margin: 29px auto 21px;
+  border: 5px solid #304F47;
+  border-radius: 100px;
+}
+
+.avatarCard header {
+  width: 202px;
+  height: 19px;
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #000;
+}
+
+.avatarCard p {
+  max-width: 249px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  text-align: justify;
+  letter-spacing: 0.005em;
+  color: #9a9ab0;
+  margin: 21px auto 70px;
+}
+
+/* Next part: buttons Above Footer */
+
+.buttonsAboveFooter {
+  width: 300px;
+  height: fit-content;
+  margin: 0 auto 160px;
+  display: flex;
+  justify-content: space-between
+}
+
+.buttonsAboveFooter__btn {
+  border: 10px solid #304F47;
+  color: #304F47;
+  width: 50px;
+  height: 0;
+  margin: 0 10px;
+  padding: 0;
+  transition: 0.5s;
+}
+
+.buttonsAboveFooter__btn:nth-of-type(1) {
+  border: 10px solid #c7923e;
+  color: #c7923e;
+  transition: 0.5s;
+}
+
+.buttonsAboveFooter__btn:hover,
+.buttonsAboveFooter__btn:nth-of-type(1):hover {
+  transform: translateY(-8px);
+}
+
+@media only screen and (max-width: 600px) {
+  /* creatIconCards() */
+
+  .iconDivs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 98vw;
+  }
+
+  .iconDivs .iconDivs__iconDiv {
+    margin: 1rem 0;
+  }
+
+  /* createAvatarCards() */
+
+  .avatarCardDivs {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .avatarCard {
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem auto;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .home__imageDivs .createdImages__newImage {
+    /* background-color: gold;
+    max-height: 400px; */
+  }
+
+  .iconDivs {
+    grid-template-columns: 1fr;
+  }
+
+  .iconDivs .iconDivs__iconDiv {
+    margin: 1rem auto;
+  }
+
+  .avatarCardDivs .avatarCard {
+    height: 360px;
+  }
+}

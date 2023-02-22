@@ -1,0 +1,22 @@
+[
+  {
+    "photo": "https://cdn2.opendemocracy.net/media/images/kigali3_gF0kWcJ.width-800.jpg",
+    "header": "Kigali",
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat elit sed pretium, egestas sed sit."
+  },
+  {
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/3/3e/National_Museum_of_Rwanda_-_Butare_-_Flickr_-_Dave_Proffer_%284%29.jpg",
+    "header": "Huye",
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat elit sed pretium, egestas sed sit."
+  },
+  {
+    "photo": "https://www.newtimes.co.rw/uploads/imported_images/files/main/articles/2020/11/05/rubavu-large.jpg",
+    "header": "Rubavu",
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat elit sed pretium, egestas sed sit."
+  },
+  {
+    "photo": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/dc/3a/eb/mountain-gorilla-naming.jpg?w=700&h=500&s=1",
+    "header": "Musanze",
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat elit sed pretium, egestas sed sit."
+  }
+]

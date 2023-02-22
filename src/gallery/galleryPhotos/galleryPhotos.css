@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  height: max-content;
+}
+
+:root {
+  --comonGap: 10px;
+  --comonTrans: 0.5s;
+}
+
+.galleryPhotos {
+  width: 100%;
+}
+
+/* starting the crazies grid setup so far */
+
+.galleryPhotos .galleryPhotos__rowCard * {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.galleryPhotos .galleryPhotos__rowCard {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  gap: var(--comonGap);
+  height: 510px;
+  margin: 1rem 0;
+}
+
+.subOfSub1,
+.subOfSub2 {
+  width: 100%; 
+  height: 100%;
+  min-height: 180px;
+  transition: var(--comonTrans);
+}
+
+.subOfSub1:hover,
+.subOfSub2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px;
+}
+
+/* Starting .rowCard__mainCol1 */
+
+.galleryPhotos__rowCard .rowCard__mainCol1 {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--comonGap);
+}
+
+.rowCard__mainCol1 .mainCol1__subCol1 {
+  display: grid;
+  grid-template-rows: 50%;
+  height: 100%;
+  width: 100%;
+  gap: var(--comonGap);
+}
+
+.rowCard__mainCol1 .mainCol1__subCol2 {
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+  transition: var(--comonTrans);
+}
+
+.rowCard__mainCol1 .mainCol1__subCol2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px;
+}
+
+/* Starting .rowCard__mainCol2 */
+
+.galleryPhotos__rowCard .rowCard__mainCol2 {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  gap: var(--comonGap);
+}
+
+.rowCard__mainCol2 .mainCol2__subCol1,
+.rowCard__mainCol2 .mainCol2__subCol2 {
+  height: 100%;
+  width: 100%;
+  transition: var(--comonTrans);
+}
+
+.rowCard__mainCol2 .mainCol2__subCol1:hover,
+.rowCard__mainCol2 .mainCol2__subCol2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px;
+}
+
+
+/* Starting .rowCard__mainCol3 */
+
+.galleryPhotos__rowCard .rowCard__mainCol3 {
+  height: 100%;
+  max-height: 510px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: var(--comonGap);
+}
+
+.rowCard__mainCol3 .mainCol3__subCol1 {
+  height: 100%;
+  width: 100%;
+  transition: var(--comonTrans);
+}
+
+.rowCard__mainCol3 .mainCol3__subCol1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px;
+}
+
+.rowCard__mainCol3 .mainCol3__subCol2 {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--comonGap);
+}
+
+
+@media only screen and (max-width: 768px) {
+  .galleryPhotos .galleryPhotos__rowCard {
+    grid-template-columns: 1fr;
+    gap: var(--comonGap);
+    height: fit-content;
+    width: 98vw;
+    margin: 1rem auto;
+  }
+}

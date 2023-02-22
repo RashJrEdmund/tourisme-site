@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+.heading_component {
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  margin: 23px auto;
+}
+
+.heading_component__p1 {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: 0.005em;
+  color: #c7923e;
+  margin: 23px 0;
+}
+
+.heading_component__p2 {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #000;
+  margin: 23px auto;
+  max-width: 608px;
+}
+
+.heading_component__p3 {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #000;
+  margin: 43px auto 0;
+}
+
+.heading_component__p4 {
+  color: #515151;
+  max-width: 1118px;
+  font-family: Mulish;
+  font-size: 24px;
+  line-height: 125%;
+  letter-spacing: 0.5%;
+  text-align: left;
+  margin: 24px auto 108px;
+}

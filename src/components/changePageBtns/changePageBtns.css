@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+.changePageBtn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 72px 0 60px;
+}
+
+.changePageBtn__btn1 {
+  border: 1px solid #c7923e;
+  background-color: #fff;
+  color: #c7923e;
+  transition: 0.5s;
+}
+
+.changePageBtn__btn1:hover {
+  background-color: #c7923e;
+  color: #fff;
+}
+
+.changePageBtn__btn2 {
+  border: 1px solid #c7923e;
+  background-color: #c7923e;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.changePageBtn__btn2:hover {
+  background-color: #fff;
+  color: #c7923e;
+}
+
+.createdImageDivs {
+  background-color: green;
+  z-index: 3;
+}
+
+.createdImageDivs img {
+  height: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+  .changePageBtn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+  }
+}

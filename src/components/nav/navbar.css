@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: fit-content;
+}
+
+:root {
+  --custom-padding: calc(1rem + 2px) 2vw;
+}
+
+.navbar {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+}
+
+.navbar__topNav {
+  background-color: #304f47;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 18px 4vw;
+}
+
+.navbar__topNav--col1 {
+  display: flex;
+  justify-content: space-between;
+  width: fit-content;
+  min-width: 350px;
+}
+
+.navbar__topNav--col1 p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 0 5px;
+  gap: 10px;
+}
+
+.navbar__topNav--col2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
+}
+
+.navbar__topNav--col2 img {
+  margin: 0 0.5rem;
+}
+
+/* THE BOTTOM PART OF THE NAVBAR STARTS HERE */
+
+.navbar__bottomNav {
+  background: none;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  padding: var(--custom-padding);
+  z-index: 5;
+}
+
+.bottomNav__sub1 {
+  width: fit-content;
+  min-width: 350px;
+  height: fit-content;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.bottomNav__sub1 .logo {
+  background: url("../../images/logo.png");
+  background-size: cover;
+  background-position: center;
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+  display: flex;
+}
+
+.navbar__bottomNav--button1 {
+  display: none;
+}
+
+.bottomNav__sub1 ul {
+  position: relative;
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  align-self: center;
+  width: fit-content;
+  margin-left: 1.5rem;
+}
+
+.bottomNav__sub1 ul a {
+  text-decoration: none;
+}
+
+.bottomNav__sub1 ul li {
+  color: #000;
+  margin: 0 10px;
+  font-size: 17px;
+}
+
+.bottomNav__sub1 ul li:hover {
+  border-bottom: 1px solid #304f47;
+}
+
+/* use this to do the navbar movement thing */
+.active {
+  border-bottom: 1px solid #304f47;
+}
+
+.bottomNav__sub1 .menu-icon,
+.bottomNav__sub1 .close-menu-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    border-bottom: 1px solid #777;
+  }
+
+  .navbar__topNav {
+    display: none;
+  }
+
+  .varying-ul--top {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0.5rem;
+    ;
+  }
+
+  .navbar__bottomNav {
+    background-color: #304f47;
+    color: #fff;
+    position: relative;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+
+  .navbar__bottomNav--button1 {
+    display: unset;
+  }
+
+  .navbar__bottomNav .bottomNav__sub1 {
+    width: 98vw;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+  }
+
+  .navbar__bottomNav .logo {
+    margin: 0;
+  }
+
+  .navbar__bottomNav .varying-ul {
+    background-color: #304f47;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70vw;
+    height: 100vh;
+    transition: 0.5s;
+    border-left: 1px solid #888;
+  }
+
+  .navbar__bottomNav .varying-ul.open {
+    right: 0;
+  }
+
+  .navbar__bottomNav ul li {
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 1.5rem 1rem;
+    transition: 0.5s;
+    z-index: 6;
+  }
+
+  .navbar__bottomNav ul li:hover {
+    background-color: #c7923e;
+  }
+
+  .navbar__bottomNav .close-menu-icon {
+    background: url("../../images/closeMenu.png");
+    background-size: cover;
+    background-position: center;
+    display: unset;
+    width: 65px;
+    height: 60px;
+    align-self: flex-end;
+    margin: 0;
+  }
+
+  .bottomNav__sub1 .menu-icon {
+    background: url("../../images/menu-icon.svg");
+    background-size: cover;
+    background-position: center;
+    display: unset;
+    width: 55px;
+    height: 45px;
+  }
+
+  .navbar__bottomNav .navbar__bottomNav--button2 {
+    display: none;
+  }
+}

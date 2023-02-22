@@ -1,0 +1,12 @@
+button {
+  border: none;
+  color: #fff;
+  padding: 16px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.button__btn:hover {
+  transform: translateY(-15px);
+}

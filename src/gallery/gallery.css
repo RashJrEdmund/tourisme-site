@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+.galleryBody {
+  color: #000;
+  width: 100vw;
+  max-width: 1224px;
+  margin: 0 auto;
+  padding: 155px 0 89px;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery__btn {
+  align-self: flex-end;
+  margin: 0;
+}
+
+.galleryBody__photos {
+  margin: 92px 0 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .galleryBody {
+    padding: 2rem 0;
+  }
+}
