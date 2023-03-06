@@ -110,6 +110,10 @@
 }
 
 @media only screen and (max-width: 600px){
+  .tourBody__changePageBtn {
+    margin-right: 1rem;
+  }
+
   .tourPhotos {
     grid-template-columns: 1fr;
   }

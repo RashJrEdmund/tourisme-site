@@ -58,3 +58,9 @@
   text-align: left;
   margin: 24px auto 108px;
 }
+
+@media only screen and (max-width: 1224px) {
+  .heading_component__p4 {
+    width: 95vw;
+  }
+}

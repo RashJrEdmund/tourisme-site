@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import './navbar.css';
 import { Link } from 'react-router-dom';
 
@@ -9,18 +10,21 @@ import Tw from '../../images/tweetter.png';
 import In from '../../images/linkedin.png';
 import Ig from '../../images/instagram.png';
 
-const toggleIcon = () => {
-  const varyingUl = document.getElementById('varying-ul');
-  varyingUl.classList.toggle('open');
-};
-
-const removeSideMenu = () => {
-  document.getElementById('varying-ul').classList.remove('open');
-};
-
 function NavBar() {
+  const newRef = useRef();
+
+  const toggleIcon = () => {
+    const varyingUl = document.getElementById('varying-ul');
+    varyingUl.classList.toggle('open');
+  };
+
+  const removeSideMenu = () => {
+    document.getElementById('varying-ul').classList.remove('open');
+    window.scrollTo(0, 0);
+  };
+
   return (
-    <div className="navbar">
+    <div ref={newRef} className="navbar">
       <div className="navbar__topNav">
         <div className="navbar__topNav--col1">
           <p>
