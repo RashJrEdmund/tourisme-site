@@ -150,6 +150,7 @@
   flex-wrap: nowrap;
   width: 100%;
   height: fit-content;
+  padding: 0 10px;
 }
 
 @media only screen and (max-width: 768px) {

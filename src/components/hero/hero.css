@@ -15,6 +15,12 @@
   justify-content: center;
 }
 
+.hero h1,
+.hero h3,
+.hero span {
+  word-break: break-all;
+}
+
 .hero .text1 {
   color: #fff;
   width: fit-content;

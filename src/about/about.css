@@ -162,14 +162,14 @@
   }
 
   .about__hero .about__hero--col1 {
-    background: url("./aboutImages/chimps.png");
+    background: linear-gradient(to right, #0000001c, #0000001c), url("./aboutImages/chimps.png");
     background-position: center;
     background-size: cover;
+    padding:  0 10px;
   }
 
   .about__hero .about__hero--col1 h1,
   .about__hero .about__hero--col1 p {
-    background: linear-gradient(to right, #0000001c, #0000001c);
     color: #fff;
   }
 

@@ -81,6 +81,7 @@ function Home() {
         />
 
         <div>{cards.createAvatarCards()}</div>
+
         <div>{cards.buttonsAboveFooter()}</div>
       </div>
     </>

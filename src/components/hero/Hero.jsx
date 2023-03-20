@@ -1,7 +1,7 @@
+/* eslint-disable react/prop-types */
 import './hero.css';
 import goldGoRight from '../../images/hero gold move forward icon.png';
 
-// eslint-disable-next-line react/prop-types
 function Hero({ text1, text2, spanText }) {
   return (
     <div className="hero">
