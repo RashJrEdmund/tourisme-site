@@ -9,7 +9,7 @@
 .contactForm {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 96vw;
   max-width: 816px;
   height: fit-content;
   margin: 50px auto;

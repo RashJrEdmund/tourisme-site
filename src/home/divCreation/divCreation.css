@@ -51,7 +51,9 @@
 /* Next function: createIconCards */
 
 .iconDivs {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
   width: 100%;
   height: fit-content;
   flex-wrap: nowrap;
@@ -62,8 +64,8 @@
 
 .iconDivs__iconDiv {
   background-color: #304f47;
-  width: 250px;
-  height: 150px;
+  min-height: 150px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -100,15 +102,19 @@
   width: 100%;
   max-width: 98vw;
   height: fit-content;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
   flex-wrap: nowrap;
   align-content: center;
   justify-content: space-between;
-  margin-bottom: 73px;
+  margin: 0 auto 73px;
+  overflow: auto;
 }
 
 .avatarCard {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   height: 380px;
   background: #fff;
   border: 1px solid #0000001a;
@@ -117,6 +123,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0 8px;
   transition: 0.5s;
 }
 
@@ -190,10 +197,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  /* creatIconCards() */
-
   .iconDivs {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     width: 98vw;
   }
@@ -202,10 +206,8 @@
     margin: 1rem 0;
   }
 
-  /* createAvatarCards() */
-
   .avatarCardDivs {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     justify-content: center;
     align-content: center;
   }
@@ -216,12 +218,8 @@
     margin: 1rem auto;
   }
 }
-@media only screen and (max-width: 500px) {
-  .home__imageDivs .createdImages__newImage {
-    /* background-color: gold;
-    max-height: 400px; */
-  }
 
+@media only screen and (max-width: 500px) {
   .iconDivs {
     grid-template-columns: 1fr;
   }
@@ -232,5 +230,20 @@
 
   .avatarCardDivs .avatarCard {
     height: 360px;
+  }
+
+
+.buttonsAboveFooter {
+  width: 300px;
+  max-width: 98vw;
+  height: fit-content;
+  margin: 0 auto 160px;
+  display: flex;
+  justify-content: space-between
+}
+
+  .buttonsAboveFooter__btn:hover,
+  .buttonsAboveFooter__btn:nth-of-type(1):hover {
+    transform: translateY(0);
   }
 }

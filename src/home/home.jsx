@@ -67,7 +67,7 @@ function Home() {
           text1="Popular Destinations"
           text2="Select Our Best Popular Destinations"
         />
-        <ChangePageBtns width="150px" position="flex-end" />
+        <ChangePageBtns width="150px" position="flex-end" MarginRight="1rem" />
 
         <div className="home__imageDivs">{cards.createImageDivs()}</div>
 
@@ -81,6 +81,7 @@ function Home() {
         />
 
         <div>{cards.createAvatarCards()}</div>
+
         <div>{cards.buttonsAboveFooter()}</div>
       </div>
     </>

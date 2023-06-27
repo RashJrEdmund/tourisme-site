@@ -1,3 +1,6 @@
+/* eslint-disable jsx-a11y/tabindex-no-positive */
+/* eslint-disable jsx-a11y/no-noninteractive-tabindex */
+import React from 'react';
 import './navbar.css';
 import { Link } from 'react-router-dom';
 
@@ -9,16 +12,15 @@ import Tw from '../../images/tweetter.png';
 import In from '../../images/linkedin.png';
 import Ig from '../../images/instagram.png';
 
-const toggleIcon = () => {
-  const varyingUl = document.getElementById('varying-ul');
-  varyingUl.classList.toggle('open');
-};
-
-const removeSideMenu = () => {
-  document.getElementById('varying-ul').classList.remove('open');
-};
-
 function NavBar() {
+  const [showMenu, setShowMenu] = React.useState(false);
+  const sideRef = React.useRef();
+
+  const removeSideMenu = () => {
+    setShowMenu(false);
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="navbar">
       <div className="navbar__topNav">
@@ -45,7 +47,13 @@ function NavBar() {
 
           {/* THIS IS WHERE THE ROUTE LINKS ARE MADE */}
 
-          <ul className="varying-ul" id="varying-ul">
+          <ul
+            className={showMenu ? 'varying-ul open' : 'varying-ul'}
+            ref={sideRef}
+            tabIndex="0"
+            id="varying-ul"
+            onBlur={() => setShowMenu(false)}
+          >
             {/* This is the top of the Mobile sideNav */}
 
             <div className="varying-ul--top">
@@ -121,7 +129,8 @@ function NavBar() {
             className="menu-icon"
             alt="hamburger menu"
             onClick={() => {
-              toggleIcon();
+              setShowMenu(true);
+              sideRef.current.focus();
             }}
           />
         </div>

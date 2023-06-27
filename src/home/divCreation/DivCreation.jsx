@@ -52,6 +52,7 @@ const createAvatarCards = () => {
           impressed with the level of professionalism and organization.
         </p>
       </div>
+
       <div className="avatarCard">
         <img src={avatar} alt="avatar_image" />
         <header>Emma Waston</header>
@@ -60,6 +61,7 @@ const createAvatarCards = () => {
           impressed with the level of professionalism and organization.
         </p>
       </div>
+
       <div className="avatarCard">
         <img src={avatar} alt="avatar_image" />
         <header>Emma Waston</header>
